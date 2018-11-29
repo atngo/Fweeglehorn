@@ -1,0 +1,40 @@
+<nav class="navbar">
+<div class="container">
+	<span class="navbar-toggle-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="mobile-nav">
+		<ul class="navbar-nav m1-auto">
+     
+			<li class="nav-item">
+			<a href="/" class="nav-link">User Settings</a>
+			</li>
+			<li class="nav-item">
+			 <a href="sign-up.html"><button>Sign Up</button></a>
+			</li>
+			 <li class="nav-item"><button id="modalBtn" class="button">Log in</button>
+			 </li>
+      <li class="nav-item">
+        <br>
+          <form name="jump">
+            <select name="menu" onchange="gotoPage(this)">
+              <option value="#">Select a Catagory</option>
+              <option value="/">ALLCHAT</option>
+              <option value="/catagory-LOL">League of Legends</option>
+              <option value="/catagory-OW">Overwatch</option>
+              <option value="/catagory-Fortnite">Fortnite</option>
+              <option value="/catagory-Pokemon-Go">Pokemon Go</option>
+              <option value="/catagory-Minecraft">Minecraft</option>
+              <option value="/catagory-Sims">Sims</option>
+            </select>
+          </form>
+        <script type="text/javascript">
+          function gotoPage(select){
+          window.location = select.value;
+          }
+        </script>
+      </li>
+		<h1><a href="/">/unmute ALL</a></h1>
+		</ul>
+	</div>
+</div>
+</nav>

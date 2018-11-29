@@ -1,0 +1,15 @@
+body {
+    background-color: lightgray;
+}
+
+	 public function getCatagory() {
+	 return $this->catagory;
+	}
+	
+	public function setCatagory($category){
+	$this->catagory = $category;
+	 }
+	 /**
+	 * @ORM\Column(type="text")
+	 */
+	private $category;

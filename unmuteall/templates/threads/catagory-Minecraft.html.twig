@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}/Unmute-ALL {% endblock %}
+{% block body %}
+<div class="row">
+{{ include('inc/create-post.html.twig') }}
+  <div class="leftcolumn">
+	{% if threads %}
+		{% for thread in threads %}
+		{% if thread.category == "Minecraft" %}
+		<div class="card">
+		<a href="/thread/{{thread.id}}">{{ thread.title }}</a> <p align="right">{{ thread.category }}</p>
+		</div>
+		{% endif %}
+		{% endfor %}
+	{% else %}
+
+	<p> There are no threads</p>
+	{% endif %}
+</div>
+</div>
+{% endblock %}

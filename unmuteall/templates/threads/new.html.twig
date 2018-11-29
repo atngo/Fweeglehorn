@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Thread{% endblock %}
+
+{% block body %}
+ <div class="leftcolumn">
+ <br>
+<h1>Create a Post</h1>
+<div class="card">
+ {{form_start(form)}}
+ {{form_widget(form)}}
+ {{form_end(form)}}
+ <br>
+ </div>
+ </div>
+ <br><br><br><br><br><br><br><br>
+  <div class="rightcolumn">
+    <div class="card">
+    <div id="card-mission">/unmute ALL is the perfect place to let out your gaming related frustations or share any interesting thoughts you may have.<br><br></div>
+	</div>
+	</div>
+{% endblock %}

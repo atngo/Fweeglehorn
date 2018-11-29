@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}/Unmute-ALL {% endblock %}
+{% block body %}
+<div class="row">
+{{ include('inc/create-post.html.twig') }}
+  <div class="leftcolumn">
+	{% if threads %}
+		{% for thread in threads %}
+		<div class="card">
+		<a href="/thread/{{thread.id}}"><h2>{{ thread.title }}</h2> 
+		
+		<br> By USERNAME</a> 
+		
+		<p align="right">{{ thread.category }}</p>
+
+		<br><button class ="thumb">thumbs up</button class ="thumb"> 14	<button class="thumb">thumbs down</button> 32
+		</div>
+		{% endfor %}
+	{% else %}
+
+	<p> There are no threads</p>
+	{% endif %}
+</div>
+</div>
+{% endblock %}

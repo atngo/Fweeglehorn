@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ thread.title }}{% endblock %}
+
+{% block body %}
+{{ include('inc/create-post.html.twig') }}
+ <div class="leftcolumn">
+ <div class="card">
+	<h2>{{ thread.title }}</h2>
+
+	<p>{{ thread.body }}</p>
+<br><button class ="thumb">thumbs up</button class ="thumb"> 14	<button class="thumb">thumbs down</button> 32
+</div>
+	<hr>
+
+	<a href="/">Go Back</a>
+{% endblock %}

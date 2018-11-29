@@ -1,0 +1,167 @@
+body{background-color: lightgrey;
+color:black;
+font-family:monospace;
+
+}
+
+.nav-item{
+background-color: white;
+display:inline;
+padding: 12px 12px 12px 12px;
+float: right;
+color:black;
+font-family:monospace;
+font-size: 12px;
+margin: 0;}
+
+a{color: mediumpurple;
+text-align: center;
+text-decoration: none;
+border-radius: 10px;
+}
+
+
+h1{color: mediumpurple;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 1;
+    font-family:monospace;
+    text-align: left}
+
+h2{color: mediumpurple;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: left;
+	margin: 0px;
+    line-height: 2px;}
+
+button {
+	border-radius: 5px;
+    background-color: mediumpurple;
+    color: white;
+    padding: 0px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    height: 30px;
+}
+
+.thumb{
+	Width: 130px;
+}
+
+.navbar{
+width: 101%;
+text-decoration: none;
+margin:0;
+background-color: white;
+height: 10%;
+position: fixed;
+top: -10px;
+left: -15px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 70%;
+ padding-left: 10%;
+padding-top: 3%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 19%;
+  padding-left: 1%;
+    padding-top: 3%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 80%;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+    margin-top: 3px;
+    border-radius: 3px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#card-mission{
+    font-family: arial;
+
+}
+
+
+/*--------------------------------------------log in modal--------------------------------------------*/
+
+.modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    Width:100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    border-radius: 5px;
+    background-color: lavender;
+    margin: 20% auto;
+    padding: 20px;
+    width: 30%;
+    height: 30%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name:modalopen;
+    animation-duration: 1s;
+}
+
+.closeBtn{
+    color:#ccc;
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover, .closeBtn:focus{
+    color: black;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+@keyframes modalopen{
+    from{opacity: 0}
+    to {opacity: 1}
+}
+
+.form-title{
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	height: 30px;
+
+}
+
+.form-body{
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+
+}
